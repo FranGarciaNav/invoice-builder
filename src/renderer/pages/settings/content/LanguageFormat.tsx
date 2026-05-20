@@ -30,7 +30,7 @@ export const LanguageFormat: FC<Props> = ({ showBack, onLanguageFormat = () => {
 
   const { t } = useTranslation();
   const storeSettings = useAppSelector(selectSettings);
-  const [language, setLanguage] = useState<Language>(storeSettings?.language ?? Language.en);
+  const [language, setLanguage] = useState<Language>(storeSettings?.language ?? Language.es);
   const [amountFormat, setAmountFormat] = useState<AmountFormat>(storeSettings?.amountFormat ?? AmountFormat.enUS);
   const [dateFormat, setDateFormat] = useState<DateFormat>(storeSettings?.dateFormat ?? DateFormat.MMddyyyy);
 

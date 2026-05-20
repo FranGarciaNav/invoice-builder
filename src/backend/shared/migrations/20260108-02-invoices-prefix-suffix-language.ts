@@ -82,7 +82,7 @@ export const up = async (db: DatabaseAdapter) => {
         "invoiceFullNumber" TEXT GENERATED ALWAYS AS (
           COALESCE("invoicePrefix", '') || "invoiceNumber" || COALESCE("invoiceSuffix", '')
         ) STORED,
-        "language" TEXT NOT NULL DEFAULT 'en',
+        "language" TEXT NOT NULL DEFAULT 'es',
         FOREIGN KEY ("businessId") REFERENCES businesses("id"),
         FOREIGN KEY ("clientId") REFERENCES clients("id"),
         FOREIGN KEY ("currencyId") REFERENCES currencies("id"),
@@ -257,7 +257,7 @@ export const up = async (db: DatabaseAdapter) => {
       `);
       await db.run(`
         ALTER TABLE invoices
-        ADD COLUMN IF NOT EXISTS "language" TEXT NOT NULL DEFAULT 'en';
+        ADD COLUMN IF NOT EXISTS "language" TEXT NOT NULL DEFAULT 'es';
       `);
       await db.run(`
         ALTER TABLE invoices

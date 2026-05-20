@@ -14,7 +14,7 @@ services:
     # build: .
     extra_hosts:
       - 'host.docker.internal:host-gateway'
-    container_name: backend
+    container_name: invoice-builder-backend
     # backend internal-only, works only via nginx
     # ports:
     #   - '3000:3000'
@@ -54,7 +54,7 @@ services:
     #   dockerfile: Dockerfile
     #   args:
     #     VITE_API_URL: ${VITE_API_URL}
-    container_name: frontend
+    container_name: invoice-builder-frontend
     ports:
       - '3001:3001'
     environment:

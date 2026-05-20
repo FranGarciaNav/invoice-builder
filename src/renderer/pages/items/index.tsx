@@ -23,19 +23,19 @@ export const ItemsPage: FC = () => {
   const excelFileName = 'items';
   const excelTemplateData: Rows = [
     {
-      name: 'Paper A4',
+      name: 'Papel A4',
       amount: '5',
-      categoryName: 'Goods',
-      unitName: 'pack',
-      description: 'Standard white A4 paper',
+      categoryName: 'Bienes',
+      unitName: 'paquete',
+      description: 'Papel A4 blanco estandar',
       isArchived: false
     },
     {
-      name: 'Pen Blue',
+      name: 'Boligrafo azul',
       amount: '150',
-      categoryName: 'Goods',
-      unitName: 'pcs',
-      description: 'Blue ballpoint pen',
+      categoryName: 'Bienes',
+      unitName: 'uds',
+      description: 'Boligrafo azul',
       isArchived: false
     }
   ];

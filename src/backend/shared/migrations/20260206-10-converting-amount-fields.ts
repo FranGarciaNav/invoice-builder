@@ -47,7 +47,7 @@ export const up = async (db: DatabaseAdapter) => {
           "invoiceFullNumber" TEXT GENERATED ALWAYS AS (
             COALESCE("invoicePrefix", '') || "invoiceNumber" || COALESCE("invoiceSuffix", '')
           ) STORED,
-          "language" TEXT NOT NULL DEFAULT 'en',
+          "language" TEXT NOT NULL DEFAULT 'es',
           "signatureData" ${getColumnType('BLOB', db.type)},
           "signatureName" TEXT,
           "signatureType" TEXT,

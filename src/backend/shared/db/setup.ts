@@ -133,7 +133,7 @@ export const initSchema = async (db: DatabaseAdapter): Promise<void> => {
     await db.run(
       `CREATE TABLE IF NOT EXISTS settings (
       "id" ${getColumnType('INTEGER PRIMARY KEY AUTOINCREMENT', db.type)},
-      "language" TEXT NOT NULL DEFAULT 'en',
+      "language" TEXT NOT NULL DEFAULT 'es',
       "amountFormat" TEXT NOT NULL DEFAULT 'en-US',
       "dateFormat" TEXT NOT NULL DEFAULT 'MM/dd/yyyy',
       "isDarkMode" INTEGER NOT NULL DEFAULT 1 CHECK ("isDarkMode" IN (0,1)),
@@ -437,5 +437,5 @@ export const initInitialData = async (db: DatabaseAdapter): Promise<void> => {
       'name'
     )
   );
-  await db.run(insertOrIgnore('categories', ['name'], [['Goods'], ['Services']], db.type, 'name'));
+  await db.run(insertOrIgnore('categories', ['name'], [['Bienes'], ['Servicios']], db.type, 'name'));
 };

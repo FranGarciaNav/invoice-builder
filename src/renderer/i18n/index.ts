@@ -4,6 +4,7 @@ import { initReactI18next } from 'react-i18next';
 
 import de from './de.json';
 import en from './en.json';
+import es from './es.json';
 import fr from './fr.json';
 import lt from './lt.json';
 
@@ -13,12 +14,13 @@ i18n
   .init({
     resources: {
       en: { translation: en },
+      es: { translation: es },
       lt: { translation: lt },
       fr: { translation: fr },
       de: { translation: de }
     },
-    lng: 'en',
-    fallbackLng: 'en',
+    lng: 'es',
+    fallbackLng: 'es',
     interpolation: {
       escapeValue: false
     }

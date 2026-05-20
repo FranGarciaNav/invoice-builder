@@ -4,10 +4,11 @@ import { DateFormat } from '../shared/enums/dateFormat';
 import { Language } from '../shared/enums/language';
 
 export const LANGUAGE_ITEMS = {
-  [Language.lt]: { label: 'Lithuanian', value: Language.lt },
-  [Language.en]: { label: 'English', value: Language.en },
-  [Language.fr]: { label: 'French', value: Language.fr },
-  [Language.de]: { label: 'German', value: Language.de }
+  [Language.lt]: { label: 'Lituano', value: Language.lt },
+  [Language.en]: { label: 'Ingles', value: Language.en },
+  [Language.es]: { label: 'Espanol', value: Language.es },
+  [Language.fr]: { label: 'Frances', value: Language.fr },
+  [Language.de]: { label: 'Aleman', value: Language.de }
 } as const;
 
 export const LANGUAGE_ITEMS_ARRAY = Object.values(LANGUAGE_ITEMS);
@@ -55,18 +56,18 @@ export const CURRENCY_FORMAT_ITEMS = {
 export const CURRENCY_FORMAT_ITEMS_ARRAY = Object.values(CURRENCY_FORMAT_ITEMS);
 
 export const MONTH_NAMES = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December'
+  'enero',
+  'febrero',
+  'marzo',
+  'abril',
+  'mayo',
+  'junio',
+  'julio',
+  'agosto',
+  'septiembre',
+  'octubre',
+  'noviembre',
+  'diciembre'
 ];
 
 export const DEFAULT_TABLE_FIELD_SORT_ORDERS = {

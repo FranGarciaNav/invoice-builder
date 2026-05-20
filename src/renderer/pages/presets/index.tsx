@@ -38,16 +38,16 @@ export const PresetsPage: FC = () => {
   const excelFileName = 'presets';
   const excelTemplateData: Rows = [
     {
-      name: 'Core preset',
+      name: 'Preajuste base',
       businessId: null,
       clientId: null,
       currencyId: null,
       bankId: null,
       styleProfilesId: null,
-      customerNotes: 'Customer notes',
-      thanksNotes: 'Thanks notes',
-      termsConditionNotes: 'Terms and conditions',
-      language: Language.en,
+      customerNotes: 'Notas para el cliente',
+      thanksNotes: 'Nota de agradecimiento',
+      termsConditionNotes: 'Terminos y condiciones',
+      language: Language.es,
       signatureSize: null,
       signatureType: null,
       signatureName: null,

@@ -22,11 +22,11 @@ export const CategoriesPage: FC = () => {
   const excelFileName = 'categories';
   const excelTemplateData: Rows = [
     {
-      name: 'Goods',
+      name: 'Bienes',
       isArchived: false
     },
     {
-      name: 'Services',
+      name: 'Servicios',
       isArchived: false
     }
   ];
