@@ -5,6 +5,7 @@ import { createBrowserRouter, createHashRouter, Navigate, RouterProvider } from 
 import { App } from './app/App';
 import './globalErrorHandlers';
 import './i18n';
+import './polyfills';
 import { BanksPage } from './pages/banks';
 import { BusinessesPage } from './pages/businesses';
 import { CategoriesPage } from './pages/categories';
